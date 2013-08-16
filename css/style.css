@@ -1020,7 +1020,33 @@ ________|  Contact Us  |__________________________________________*/
 	border-radius:3px;
 }
 
+input[type=checkbox].css-checkbox {
+							position: absolute; 
+							overflow: hidden; 
+							clip: rect(0 0 0 0); 
+							height:1px; 
+							width:1px;  
+							padding:0;
+							border:0;
+						}
 
+						input[type=checkbox].css-checkbox + label.css-label {
+							padding-left:20px;
+							height:15px; 
+							display:inline-block;
+							line-height:15px;
+							background-repeat:no-repeat;
+							background-position: 3px 0;
+							font-size:15px;
+							vertical-align:middle;
+							cursor:pointer;
+						}
+
+						input[type=checkbox].css-checkbox:checked + label.css-label {
+							background-position: 3px -15px;
+						}
+						
+						  .css-label{ background-image:url(../images/mac-style.png); }
 
 /*      .----------.
 ________|  Footer  |__________________________________________*/
@@ -1192,35 +1218,3 @@ ________|  Colors  |________________________________________ */
 .dark-blue   { color: #005965;}
 .alfa-blue   { color: rgba:0,110,124,0.6}
 .gray        { color: #444444;}
-
-
-
-
-
-input[type=checkbox].css-checkbox {
-							position: absolute; 
-							overflow: hidden; 
-							clip: rect(0 0 0 0); 
-							height:1px; 
-							width:1px;  
-							padding:0;
-							border:0;
-						}
-
-						input[type=checkbox].css-checkbox + label.css-label {
-							padding-left:20px;
-							height:15px; 
-							display:inline-block;
-							line-height:15px;
-							background-repeat:no-repeat;
-							background-position: 3px 0;
-							font-size:15px;
-							vertical-align:middle;
-							cursor:pointer;
-						}
-
-						input[type=checkbox].css-checkbox:checked + label.css-label {
-							background-position: 3px -15px;
-						}
-						
-						  .css-label{ background-image:url(../images/mac-style.png); }
